@@ -1,0 +1,29 @@
+* 개발 환경은 PPT 참조 *
+
+[1]
+ppt는 나눔스퀘어 폰트에 최적화 됨
+(첨부 파일에 동봉되어 있으니 설치해 주세요.)
+
+[2]
+같이 첨부된 baemin_database_0915.sql 을 실행 후 commit 필요
+한글이 깨져 있을 시 같이 동봉된 .txt 파일로 덮어쓰기
+
+[3]
+views/admin/detail.jsp 와 views/store/storeDetail.jsp 상단에
+[kakao에서 발급받은 rest api key 입력] 부분 입력 필요
+
+[4]
+resources/static/js/order/order.js
+283줄 주석처리 되어 있음
+[가맹점 식별코드] 입력 필요 - 아임포트에서 발급
+입력 후 주석해제 해야 정상 동작
+
+[5]
+application.yml 에서
+- database 설정 필요 (url, username, password)
+- oauth2 부분 client-id, client-secret 입력 필요
+- mail 부분 username(구글 ID), password(구글 앱 비밀번호) 입력 필요
+- 마지막 줄에 발급받은 imp_key, imp_secret 입력 필요 - 아임포트에서 발급
+
+[6]
+가게 검색 시 해운대구만 가능함 (우편번호 480**~481**)
